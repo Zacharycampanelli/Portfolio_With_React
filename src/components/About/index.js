@@ -1,13 +1,13 @@
 import React from 'react';
-import selfImage from '../../assets/images/Zacharycampanelli.jpg'
-// personal_portfolio_react/src/assets/images/Zacharycampanelli.jpg
+import selfImg from '../../assets/images/Zacharycampanelli.jpg';
+
 function About() {
-    return ( 
-        <section className='my-5'>
-            <h1 id='about'>Zack</h1>
-            <img src={selfImage} className='my-2' style={{ width: '100%'}} alt='self-image' />
-        </section>
-    )
+  return (
+    <section className="my-5">
+      <h1 id="about">Zack</h1>
+      <img src={selfImg} className="my-2  d-flex" style={{ width: '100%' }} alt="developer" />
+    </section>
+  );
 }
 
 export default About;

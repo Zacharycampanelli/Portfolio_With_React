@@ -175,7 +175,7 @@ a:visited {
   display: flex;
   flex-direction: column;
   flex: 1;
-  justify-content: start;
+  justify-content: flex-start;
 }
 
 .thumbnail {
