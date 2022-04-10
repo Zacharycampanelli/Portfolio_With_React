@@ -1,6 +1,6 @@
 import React from 'react';
-import selfImage from '../../../src/assets/images/Zacharycampanelli.jpg'
-
+import selfImage from '../../assets/images/Zacharycampanelli.jpg'
+// personal_portfolio_react/src/assets/images/Zacharycampanelli.jpg
 function About() {
     return ( 
         <section className='my-5'>
