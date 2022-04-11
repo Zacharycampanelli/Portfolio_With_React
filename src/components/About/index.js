@@ -1,6 +1,7 @@
 import React from 'react';
 import selfImg from '../../assets/images/Zacharycampanelli.jpg';
 
+
 function About() {
   return (
     <section id="about_me" className="bio">

@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../../assets/images/logo.png'
 
 function Nav() {
   return (
@@ -48,7 +49,7 @@ function Nav() {
 
       <div class="content-area">
         <div class="content animate__animated animate__fadeIn animate__delay-1s animate__slow centered">
-          <img id="logo" src="./assets/images/logo.png" alt="logo" />
+          <img id="logo" src={logo} alt="logo" />
           <h2>Full-Stack Developer</h2>
         </div>
       </div>
