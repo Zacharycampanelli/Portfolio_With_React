@@ -5,8 +5,37 @@ import './App.css'
 import Footer from './components/Footer';
 import PhotoGallery from './components/PhotoGallery';
 import ContactForm from './components/Contact';
+import Resume from './components/Resume';
+
+
+function Notification(status) {
+  console.log(status, "hi");
+  return (
+    <div>
+      
+          
+      {(() => {
+        switch (status) {
+          case 'About Me':
+            return <About></About>;
+          case 'My Work':
+            return <PhotoGallery></PhotoGallery>;
+          case 'Contact Me':
+            return <ContactForm></ContactForm>;
+            case 'Resume':
+            return <Resume></Resume>;
+          default:
+            return <About></About>;
+        }
+      })()}
+    </div>
+  );
+}
+
+
 
 function App() {
+
 
   const [sectionTitles] = useState([
     {
@@ -22,11 +51,14 @@ function App() {
       ref: 'contact_me'
     },
     {
-      title: 'Resume'
+      title: 'Resume',
+      ref: 'resume'
     }
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(sectionTitles[0]);
+
+  
 
   return (
     <div>
@@ -36,14 +68,27 @@ function App() {
         setCurrentCategory={setCurrentCategory}
         currentCategory={currentCategory}
         ></Nav>
-        <PhotoGallery></PhotoGallery>
-        
+
+    {console.log(currentCategory.title)}
+    {Notification(currentCategory.title)}
+
+      {/* { (currentCategory.title === 'About Me') ? (
         <About></About>
-        <ContactForm></ContactForm>
+        ) : ('')
+      }
+
+{ (currentCategory.title === 'My Work') ? (
+        <PhotoGallery></PhotoGallery>
+        ) : ('')
+      }
+        
+       <ContactForm></ContactForm> */}
         <Footer></Footer>
       </main>
     </div>
   )
 }
+
+
 
 export default App;

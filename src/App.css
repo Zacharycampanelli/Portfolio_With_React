@@ -80,7 +80,7 @@ a:visited {
 .navbar-nav a {
   font-size: 1.2em;
   /* border-bottom: 0.18em solid var(--darkgreen); */
-  color: var(--white);
+
   padding: 1em;
 }
 
@@ -239,6 +239,14 @@ a:visited {
 }
 
 
+/* resume */
+.resume {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--darkblue);
+  color: var(--lightteal);
+  text-align: center;
+}
 
 /* Footer Styles */
 .footer {
