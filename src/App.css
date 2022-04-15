@@ -58,6 +58,11 @@ a:visited {
   color: var(--lightteal) !important;
   opacity: 0.6;
 }
+
+.navActive {
+  font-size: 100px;
+}
+
 .navbar-nav {
   background-color: transparent;
   align-content: flex-end;
@@ -206,8 +211,37 @@ a:visited {
   color: var(--darkblue);
 }
 
-/* Contact Styles */
+/* Contact Form Styles */
 .contact {
+  display: flex;
+  color: var(--lightteal);
+  background-color: var(--mediumblue);
+}
+
+
+
+.form-row > label {
+  padding: .5em 1em .5em 0;
+  flex: 1;
+  padding-bottom: 0.5em;
+}
+
+.form-row > input, .form-row > textarea {
+  width: 25vw;
+  float: right;
+  flex: 2;
+  padding-bottom: 0.5em;
+}
+
+.form-row > button {
+
+  align-self: center;
+}
+
+
+
+/* Footer Styles */
+.footer {
   display: flex;
   justify-content: space-between;
   background-color: var(--darkblue);

@@ -17,10 +17,10 @@ function Footer() {
     const linkedIn = <FontAwesomeIcon icon={faLinkedin} />
     const spotify = <FontAwesomeIcon icon={faSpotify} />
   return (
-    <section id="contact_me" className="contact">
+    <section className="footer">
       <div className="container-fluid">
         <div className="row d-flex justify-content-around">
-          <h3 className="section_title">Contact Me</h3>
+          
           
         </div>
         <div className="row d-flex justify-content-around">
