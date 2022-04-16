@@ -18,7 +18,7 @@
 
 h3 {
   font-size: 2em;
-}
+} 
 
 h5,
 h6 {
@@ -54,18 +54,23 @@ a:visited {
 
 /* Navbar Styles */
 
+.navbar {
+  background-color: var(--darkblue);
+}
+
 .nav-link {
   color: var(--lightteal) !important;
   opacity: 0.6;
 }
 
 .navActive {
-  font-size: 100px;
+  color: #fff !important;
 }
 
 .navbar-nav {
-  background-color: transparent;
+  
   align-content: flex-end;
+
 }
 
 .navbar-nav ul {
@@ -188,6 +193,13 @@ a:visited {
   height: auto;
 }
 
+.img {
+  height: 24vh;
+  width: 100%;
+  /*max-width: 90%; */
+  padding: 1 1,;
+}
+
 .caption {
   position: absolute;
   bottom: 10%;
@@ -282,10 +294,11 @@ address > a {
 }
 
 /* Bootstrap */
-.card {
+.img-card {
   text-align: center;
   margin-bottom: 1.2em;
   background-color: var(--grey);
+  width: 30% !important;
 }
 
 .card-img-top {

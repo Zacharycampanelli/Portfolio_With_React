@@ -44,8 +44,8 @@ function Nav(props) {
 
     
           {sectionTitles.map((category) => (
-            <a href={`#${category.ref}`}
-              className={`mx-1 ${
+            <a href={`#${category.ref}`} 
+              className={`mx-1 nav-link ${
                 currentCategory.title === category.title && 'navActive'
                 }`}
               key={category.title}
