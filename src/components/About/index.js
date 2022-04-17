@@ -29,12 +29,7 @@ function About() {
               asset on any team.
             </p>
             <br />
-            <p>
-              <a href="./assets/images/Campanelli_resume.pdf" download>
-                {' '}
-                Download my resume here
-              </a>
-            </p>
+            
           </div>
         </div>
       </div>

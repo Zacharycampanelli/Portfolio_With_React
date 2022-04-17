@@ -21,7 +21,7 @@ function Resume() {
             <br />
            
             <p>
-              <a href="../../assets/images/Campanelli_resume.jpg" download="CampanelliResume">
+              <a href={portfolio} download="CampanelliResume">
                 {' '}
                 Download my resume here
               </a>
