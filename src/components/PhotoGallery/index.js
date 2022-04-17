@@ -13,6 +13,7 @@ function PhotoGallery (currentPhoto) {
     <section id="my_work" class="portfolio">
       <div class="my_portfolio container-fluid">
         <h3 class="section_title">My Work</h3>
+        
 {/* 
         <h1>{name}</h1>
         <p>{tools}</p>

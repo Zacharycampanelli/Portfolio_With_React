@@ -228,6 +228,8 @@ a:visited {
   display: flex;
   color: var(--lightteal);
   background-color: var(--mediumblue);
+  height: 75vh;
+  padding-top: 3em;
 }
 
 
@@ -236,18 +238,30 @@ a:visited {
   padding: .5em 1em .5em 0;
   flex: 1;
   padding-bottom: 0.5em;
+  font-size: 1.4em;
 }
 
 .form-row > input, .form-row > textarea {
   width: 25vw;
+  height: 3vh;
   float: right;
   flex: 2;
   padding-bottom: 0.5em;
 }
 
-.form-row > button {
+.form-row > textarea {
+  height: 30vh;
+}
 
+.form-row > button {
+  font-size: 1.3em;
   align-self: center;
+}
+
+.formButton {
+  align-self: flex-end;
+  
+  
 }
 
 
@@ -260,6 +274,13 @@ a:visited {
   text-align: center;
 }
 
+.proficiencies {
+  margin-top: 5vh;
+}
+
+.proficiencies li {
+  text-align: start;
+}
 /* Footer Styles */
 .footer {
   display: flex;
@@ -298,7 +319,7 @@ address > a {
   text-align: center;
   margin-bottom: 1.2em;
   background-color: var(--grey);
-  width: 30% !important;
+  /* width: 30% !important; */
 }
 
 .card-img-top {

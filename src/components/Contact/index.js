@@ -37,7 +37,7 @@ function ContactForm() {
     <section className='contact' id='contact_me'>
         <div className="container-fluid">
         <div className="row justify-content-center">
-          <div className="col-5 text-left">
+          <div className="col-12 col-md-8 text-left">
       <h1 data-testid="h1tag" className="section_title">
         Contact me
       </h1>
@@ -59,9 +59,9 @@ function ContactForm() {
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        
-        <div className='form-row'>
-        <button data-testid="button" type="submit">
+        <br/>
+        <div className='form-row text-center mx-auto'>
+        <button data-testid="button" type="submit" className='formButton mx-auto'>
           Submit
         </button>
         </div>

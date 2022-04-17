@@ -60,19 +60,19 @@ function Photo() {
   return (
     <div className="flex-row row justify-content-around">
       {photos.map((image) => (
-        <div class="img-card mx-3">
+        <div className="img-card col-12 col-md-3 mx-1">
           <a data-target="#myModal" data-toggle="modal">
             <img
               src={require(`../../assets/images/${image.file}.png`)}
               alt={image.name}
-              className="img "
+              className="img"
               //  style={{height: auto}}
               // onClick={}
               key={image.name}
             />
-            <div class="card-body">
-              <h5 class="card-title">{image.name}</h5>
-              <p class="card-text">{image.tools}</p>
+            <div className="card-body">
+              <h5 className="card-title">{image.name}</h5>
+              <p className="card-text">{image.tools}</p>
             </div>
           </a>
         </div>
