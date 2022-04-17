@@ -1,0 +1,118 @@
+.modalBackground {
+  width: 100vw;
+  height: 100vh;
+
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.modalContainer {
+  width: 75%;
+  height: auto;
+  border-radius: 12px;
+  background-color: var(--mediumblue);
+  box-shadow: rgba(0, 0, 0, 0.95) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 2em 4em;
+}
+
+.modalContainer .body {
+  flex: 50%;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  /* font-size: 1.7rem; */
+  text-align: center;
+}
+
+
+
+.modalContainer li {
+  text-decoration: none;
+}
+/* .modalContainer .footer button {
+    width: 150px;
+    height: 45px;
+    margin: 10px;
+    border: none;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+   */
+.modalImage {
+  width: 60%;
+  padding: 2vw;
+}
+
+.modalText {
+  text-align: start;
+  font-size: 1.2em;
+}
+
+.modalTextTools {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 600;
+  padding-top: 1vh;
+}
+
+button {
+  width: 10vw;
+  background-color: var(--darkblue);
+  color: var(--lightteal);
+}
+
+.modalContainer .title {
+  display: inline-block;
+  text-align: center;
+  margin-top: 2vh;
+}
+
+.modalContainer .footer {
+    flex: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    background-color: var(--mediumblue);
+  }
+
+.modalContainer a {
+    color: #fff;
+}
+.modalContainer a:visited {
+    text-decoration: none;
+}
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .modalContainer {
+        width: 95%;
+        height: 75%;
+        padding: 1em;
+        margin-top: -10vh;
+      }
+
+      .modalImage {
+        width: 60%;
+        padding: 2vw;
+        display: none;
+      }
+
+      .modalText ,
+      .modalTextTools {
+        font-size: .8em;
+      }
+
+        .modalContainer .footer {
+
+            font-size: 0.7em;
+            align-items: flex-start;
+          }
+      }

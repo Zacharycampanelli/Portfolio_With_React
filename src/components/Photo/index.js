@@ -1,6 +1,12 @@
+import Modal from '../Modal';
 import React, { useState } from 'react';
 
+
 function Photo() {
+
+  const [openModal, setOpenModal] = useState(false);
+  const [currentPhoto, setCurrentPhoto] = useState();
+
   const [photos] = useState([
     {
       name: 'Spelling Practice',
@@ -57,26 +63,38 @@ function Photo() {
     },
   ]);
 
+  const toggleModal = (image, i) => {
+    setOpenModal(true);
+    setCurrentPhoto({...image, index: i});
+  }
+
   return (
+
+    
     <div className="flex-row row justify-content-around">
-      {photos.map((image) => (
-        <div className="img-card col-12 col-md-3 mx-1">
+       {openModal && <Modal closeModal={setOpenModal} photo={currentPhoto} />}
+      {photos.map((image, i) => (
+        <div className="img-card col-12 col-md-4 col-lg-3 mx-1">
           <a data-target="#myModal" data-toggle="modal">
             <img
               src={require(`../../assets/images/${image.file}.png`)}
               alt={image.name}
-              className="img"
+              className="img openModalBtn"
               //  style={{height: auto}}
-              // onClick={}
+              onClick={() =>  toggleModal(image, i) }
               key={image.name}
             />
             <div className="card-body">
               <h5 className="card-title">{image.name}</h5>
               <p className="card-text">{image.tools}</p>
+               
             </div>
           </a>
+          
         </div>
+      
       ))}
+      
     </div>
   );
 }
