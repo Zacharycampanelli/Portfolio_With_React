@@ -10,9 +10,9 @@ function PhotoGallery (currentPhoto) {
     } = currentPhoto;
 
   return (
-    <section id="my_work" class="portfolio">
-      <div class="my_portfolio container-fluid">
-        <h3 class="section_title">My Work</h3>
+    <section id="my_work" className="portfolio">
+      <div className="my_portfolio container-fluid">
+        <h3 className="section_title">My Work</h3>
         
 {/* 
         <h1>{name}</h1>

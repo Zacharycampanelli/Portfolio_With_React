@@ -33,7 +33,7 @@ function Photo() {
         'An application that holds your personal login information for each and every website you need. This project was built using Express.js, Sequelize, and Handlebars',
       github: 'https://github.com/Zacharycampanelli/Personal_Info_Locker',
       deployed: 'https://sleepy-cove-57890.herokuapp.com/',
-      file: 'personalinfolocker',
+      file: 'Personalinfolocker',
     },
     {
       name: 'Password Generator',
