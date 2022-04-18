@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio_With_React/static/css/main.f0ee1d2f.css",
-    "main.js": "/Portfolio_With_React/static/js/main.6f8ef9dd.js",
+    "main.js": "/Portfolio_With_React/static/js/main.7fa21591.js",
     "static/js/787.fb771931.chunk.js": "/Portfolio_With_React/static/js/787.fb771931.chunk.js",
     "static/media/solarbears.png": "/Portfolio_With_React/static/media/solarbears.355897f107fe900cc847.png",
     "static/media/Zacharycampanelli.jpg": "/Portfolio_With_React/static/media/Zacharycampanelli.cac681bdf45b3af77338.jpg",
@@ -13,11 +13,11 @@
     "static/media/Personalinfolocker.png": "/Portfolio_With_React/static/media/Personalinfolocker.ac10c5ce7747237a0842.png",
     "index.html": "/Portfolio_With_React/index.html",
     "main.f0ee1d2f.css.map": "/Portfolio_With_React/static/css/main.f0ee1d2f.css.map",
-    "main.6f8ef9dd.js.map": "/Portfolio_With_React/static/js/main.6f8ef9dd.js.map",
+    "main.7fa21591.js.map": "/Portfolio_With_React/static/js/main.7fa21591.js.map",
     "787.fb771931.chunk.js.map": "/Portfolio_With_React/static/js/787.fb771931.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f0ee1d2f.css",
-    "static/js/main.6f8ef9dd.js"
+    "static/js/main.7fa21591.js"
   ]
 }
