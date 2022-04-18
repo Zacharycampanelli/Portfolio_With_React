@@ -23,9 +23,9 @@ Clone this repository to your computer. Navigate to the root folder then run `np
 Run the commmand `npm start` from the root folder of the application, then visit `localhost:3000/` from your browser. The link to the deployed website can also be used, located at the bottom of this page
 
   
-![screenshot](assets/images/Screenshot_1.png)
-![screenshot](assets/images/Screenshot_2.png)
-![screenshot](assets/images/Screenshot_3.png)
+![screenshot](src/assets/images/Screenshot_1.png)
+![screenshot](src/assets/images/Screenshot_2.png)
+![screenshot](src/assets/images/Screenshot_3.png)
 
 ## License
 A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.  
