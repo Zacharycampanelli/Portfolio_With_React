@@ -1,19 +1,16 @@
 import React, { useState } from 'react';
-import About from './components/About'
-import Nav from './components/Nav'
-import './App.css'
+import About from './components/About';
+import Nav from './components/Nav';
+import './App.css';
 import Footer from './components/Footer';
 import PhotoGallery from './components/PhotoGallery';
 import ContactForm from './components/Contact';
 import Resume from './components/Resume';
 
-
 function Notification(status) {
-  console.log(status, "hi");
+  console.log(status, 'hi');
   return (
     <div>
-      
-          
       {(() => {
         switch (status) {
           case 'About Me':
@@ -22,7 +19,7 @@ function Notification(status) {
             return <PhotoGallery></PhotoGallery>;
           case 'Contact Me':
             return <ContactForm></ContactForm>;
-            case 'Resume':
+          case 'Resume':
             return <Resume></Resume>;
           default:
             return <About></About>;
@@ -32,63 +29,44 @@ function Notification(status) {
   );
 }
 
-
-
 function App() {
-
-
   const [sectionTitles] = useState([
     {
       title: 'About Me',
-      ref: 'about_me'
+      ref: 'about_me',
     },
     {
       title: 'My Work',
-      ref: 'my_work'
+      ref: 'my_work',
     },
     {
       title: 'Contact Me',
-      ref: 'contact_me'
+      ref: 'contact_me',
     },
     {
       title: 'Resume',
-      ref: 'resume'
-    }
+      ref: 'resume',
+    },
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(sectionTitles[0]);
-
-  
 
   return (
     <div>
       <main>
         <Nav
-        sectionTitles={sectionTitles}
-        setCurrentCategory={setCurrentCategory}
-        currentCategory={currentCategory}
+          sectionTitles={sectionTitles}
+          setCurrentCategory={setCurrentCategory}
+          currentCategory={currentCategory}
         ></Nav>
 
-    {console.log(currentCategory.title)}
-    {Notification(currentCategory.title)}
+        {console.log(currentCategory.title)}
+        {Notification(currentCategory.title)}
 
-      {/* { (currentCategory.title === 'About Me') ? (
-        <About></About>
-        ) : ('')
-      }
-
-{ (currentCategory.title === 'My Work') ? (
-        <PhotoGallery></PhotoGallery>
-        ) : ('')
-      }
-        
-       <ContactForm></ContactForm> */}
         <Footer></Footer>
       </main>
     </div>
-  )
+  );
 }
-
-
 
 export default App;

@@ -180,7 +180,7 @@ a:visited {
 
 .form-row > input,
 .form-row > textarea {
-  width: 25vw;
+  width: 60%;
   height: 3vh;
   float: right;
   flex: 2;
@@ -189,11 +189,20 @@ a:visited {
 
 .form-row > textarea {
   height: 30vh;
+  display: inline-block;
+
 }
 
 .form-row > button {
-  font-size: 1.3em;
-  align-self: center;
+  /* font-size: 1.3em;
+  align-self: center; */
+  position: 'absolute';
+    width: 50;
+    height: 50;
+    bottom: 0;
+    /* left: Dimensions.get('window').width - 70; */
+
+    z-index: 100;
 }
 
 .formButton {

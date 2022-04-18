@@ -1,19 +1,13 @@
 import React from 'react';
 import selfImg from '../../assets/images/Zacharycampanelli.jpg';
 
-
 function About() {
   return (
     <section id="about_me" className="bio">
       <div className="container-fluid my-bio">
         <div className="row">
           <div className="col-12 col-lg-6 text-center">
-            <img
-              src={selfImg}
-              alt="Zachary Campanelli"
-              className="img-fluid aniview-v4"
-              //   data-av-animation="animate__fadeInLeft"
-            />
+            <img src={selfImg} alt="Zachary Campanelli" className="img-fluid aniview-v4" />
           </div>
           <div className="col-12 col-lg-6">
             <h3 className="section_title">About Me</h3>
@@ -29,7 +23,6 @@ function About() {
               asset on any team.
             </p>
             <br />
-            
           </div>
         </div>
       </div>

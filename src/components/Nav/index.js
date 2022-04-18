@@ -1,28 +1,14 @@
-import React, {useState} from 'react';
-import logo from '../../assets/images/logo.png'
-
+import React, { useState } from 'react';
+import logo from '../../assets/images/logo.png';
 
 function Nav(props) {
   // const [current, setCurrent] = useState
-  const {
-    sectionTitles = [],
-    setCurrentCategory,
-    currentCategory
-  } = props;
-  
-  function categorySelected() {
-    console.log("hello")
-  }
+  const { sectionTitles = [], setCurrentCategory, currentCategory } = props;
 
   console.log(sectionTitles);
-  console.log(currentCategory)
+  console.log(currentCategory);
   return (
     <header className="flex-row">
-
-    
-    
-        
-   
       <nav className="navbar navbar-expand-md navbar-dark">
         <div className="container-fluid">
           <a className="navbar-brand" id="navbar-title" href="/">
@@ -41,35 +27,29 @@ function Nav(props) {
           </button>
           <div className="collapse navbar-collapse justify-content-end" id="collapseNavbar">
             <ul className="navbar-nav">
-
-
-    
-          {sectionTitles.map((category) => (
-            <a href={`#${category.ref}`} 
-              className={`mx-1 nav-link ${
-                currentCategory.title === category.title && 'navActive'
-                }`}
-              key={category.title}
-            >
-              <span
-                onClick={() => {
-                  setCurrentCategory(category)
-                }}
-              >
-              {category.title}
-              </span>
-            </a>
-          ))}
-           </ul>
+              {sectionTitles.map((category) => (
+                <li className="nav-item">
+                  <a
+                    href={`#${category.ref}`}
+                    className={`mx-1 nav-link ${currentCategory.title === category.title && 'navActive'}`}
+                    key={category.title}
+                  >
+                    <span
+                      onClick={() => {
+                        setCurrentCategory(category);
+                      }}
+                    >
+                      {category.title}
+                    </span>
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </nav>
     </header>
   );
-
-
-
-  
 }
 
 export default Nav;
