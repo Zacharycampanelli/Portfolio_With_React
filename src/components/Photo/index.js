@@ -7,6 +7,14 @@ function Photo() {
 
   const [photos] = useState([
     {
+      name: 'Extreme Checkers',
+      tools: 'React | Chakra UI | Typescript | Graphql',
+      description: 'An app to practice your checkers skill',
+      github: 'https://github.com/Zacharycampanelli/Checkers_Club',
+      deployed: 'https://extreme-checkers-app.herokuapp.com/',
+      file: 'checkers',
+    },
+    {
       name: 'Spelling Practice',
       tools: 'HTML | CSS | Javascript | Bulma',
       description:
@@ -51,14 +59,7 @@ function Photo() {
       deployed: 'https://zacharycampanelli.github.io/Taskmaster_Pro/',
       file: 'taskmaster',
     },
-    {
-      name: 'Solar Bears',
-      tools: 'HTML | CSS',
-      description: 'A website for an imaginary Solar Panel Company',
-      github: 'https://github.com/Zacharycampanelli/Solar_Bears',
-      deployed: 'https://zacharycampanelli.github.io/Solar_Bears/',
-      file: 'solarbears',
-    },
+    
   ]);
 
   const toggleModal = (image, i) => {
