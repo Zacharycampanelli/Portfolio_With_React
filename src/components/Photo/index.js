@@ -1,7 +1,7 @@
 import Modal from '../Modal';
 import React, { useState } from 'react';
 
-function Photo() {
+const Photo = () => {
   const [openModal, setOpenModal] = useState(false);
   const [currentPhoto, setCurrentPhoto] = useState();
 

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import logo from '../../assets/images/logo.png';
 
-function Nav(props) {
+const Nav = (props) => {
   const { sectionTitles = [], setCurrentCategory, currentCategory } = props;
 
   console.log(sectionTitles);

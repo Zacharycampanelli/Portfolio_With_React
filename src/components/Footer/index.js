@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMobile, faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
 import { faGithubSquare, faLinkedin, faSpotify } from '@fortawesome/free-brands-svg-icons';
 
-function Footer() {
+const Footer = () => {
   const phone = <FontAwesomeIcon icon={faMobile} />;
   const envelope = <FontAwesomeIcon icon={faEnvelopeSquare} />;
   const github = <FontAwesomeIcon icon={faGithubSquare} />;

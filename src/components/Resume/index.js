@@ -1,7 +1,7 @@
 import React from 'react';
 import portfolio from '../../assets/images/Campanelli_resume.jpg';
 
-function Resume() {
+const Resume = () => {
   return (
     <section id="resume" className="resume">
       <div className="container-fluid my-bio">

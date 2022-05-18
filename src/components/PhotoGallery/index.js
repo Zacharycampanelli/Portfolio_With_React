@@ -1,9 +1,7 @@
 import React from 'react';
 import Photo from '../Photo';
 
-function PhotoGallery(currentPhoto) {
-
-
+const PhotoGallery = (currentPhoto) => {
   return (
     <section id="my_work" className="portfolio">
       <div className="my_portfolio container-fluid">
@@ -13,6 +11,6 @@ function PhotoGallery(currentPhoto) {
       </div>
     </section>
   );
-}
+};
 
 export default PhotoGallery;

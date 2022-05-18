@@ -1,7 +1,7 @@
 import React from 'react';
 import selfImg from '../../assets/images/Zacharycampanelli.jpg';
 
-function About() {
+const About = () => {
   return (
     <section id="about_me" className="bio">
       <div className="container-fluid my-bio">
