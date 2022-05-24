@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio_With_React/static/css/main.75a3424d.css",
-    "main.js": "/Portfolio_With_React/static/js/main.3d306a9c.js",
+    "main.css": "/Portfolio_With_React/static/css/main.4ea6f5a6.css",
+    "main.js": "/Portfolio_With_React/static/js/main.671ef0c2.js",
     "static/js/787.fb771931.chunk.js": "/Portfolio_With_React/static/js/787.fb771931.chunk.js",
     "static/media/solarbears.png": "/Portfolio_With_React/static/media/solarbears.355897f107fe900cc847.png",
     "static/media/Zacharycampanelli.jpg": "/Portfolio_With_React/static/media/Zacharycampanelli.cac681bdf45b3af77338.jpg",
@@ -17,12 +17,12 @@
     "static/media/password.png": "/Portfolio_With_React/static/media/password.120459da2557e28c7dea.png",
     "static/media/Personalinfolocker.png": "/Portfolio_With_React/static/media/Personalinfolocker.ac10c5ce7747237a0842.png",
     "index.html": "/Portfolio_With_React/index.html",
-    "main.75a3424d.css.map": "/Portfolio_With_React/static/css/main.75a3424d.css.map",
-    "main.3d306a9c.js.map": "/Portfolio_With_React/static/js/main.3d306a9c.js.map",
+    "main.4ea6f5a6.css.map": "/Portfolio_With_React/static/css/main.4ea6f5a6.css.map",
+    "main.671ef0c2.js.map": "/Portfolio_With_React/static/js/main.671ef0c2.js.map",
     "787.fb771931.chunk.js.map": "/Portfolio_With_React/static/js/787.fb771931.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.75a3424d.css",
-    "static/js/main.3d306a9c.js"
+    "static/css/main.4ea6f5a6.css",
+    "static/js/main.671ef0c2.js"
   ]
 }
